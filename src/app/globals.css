@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: #ba0013;
+  --color-primary-container: #e31e24;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #fffafa;
+  --color-secondary: #635d5d;
+  --color-secondary-container: #eae0e0;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #6a6363;
+  --color-surface: #fff8f7;
+  --color-surface-container: #ffe9e6;
+  --color-surface-container-low: #fff0ee;
+  --color-surface-container-high: #ffe2de;
+  --color-surface-container-highest: #fddbd7;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface: #291715;
+  --color-on-surface-variant: #5d3f3c;
+  --color-outline: #926f6b;
+  --color-outline-variant: #e7bdb8;
+  --color-on-background: #291715;
+  --color-tertiary: #006190;
+  --color-tertiary-container: #007bb5;
+  --color-error: #ba1a1a;
+
+  --font-headline: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+
+  --radius-DEFAULT: 0.5rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-full: 9999px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.hero-gradient {
+  background: linear-gradient(135deg, #ba0013 0%, #e31e24 100%);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.glass-header {
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 248, 247, 0.85);
+}
+
+.shadow-ambient {
+  box-shadow: 0 12px 32px rgba(41, 23, 21, 0.06);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #ba0013 0%, #e31e24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+::selection {
+  background-color: var(--color-surface-container-highest);
+  color: var(--color-primary);
 }
