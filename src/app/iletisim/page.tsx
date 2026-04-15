@@ -109,18 +109,20 @@ export default function Iletisim() {
                 Merkez Yerleşke
               </h3>
               <p className="text-white/90 text-lg leading-relaxed">
-                Sarıcalı Mah. Yunus Emre Cad. No:14
+                Çay Mah. Mustafa Kemal Güneşdoğdu Cad. No:19/1
                 <br />
                 Çarşamba / SAMSUN
               </p>
             </div>
             <div className="mt-8 z-10">
               <a
-                href="tel:+903621234567"
+                href="tel:+905413851955"
                 className="flex items-center gap-3 text-xl font-bold hover:translate-x-2 transition-transform"
               >
                 <span className="material-symbols-outlined">call</span>
-                +90 (362) 123 45 67
+                +90 (541) 385 19 55
+                <br />
+                +90 (362) 833 23 53
               </a>
             </div>
             <div className="absolute -right-12 -bottom-12 w-48 h-48 bg-white/10 rounded-full blur-3xl" />

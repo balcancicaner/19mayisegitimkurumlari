@@ -61,9 +61,7 @@ export default function Projelerimiz() {
                     AI Destekli Robotik Kol
                   </h3>
                   <p className="text-white/80 max-w-lg">
-                    TEKNOFEST 2023 finalisti olan projemiz, engelli bireyler için
-                    düşük maliyetli ve yüksek hassasiyetli protez çözümleri
-                    sunuyor.
+                    Her yıl gerçekleştirdiğimiz bilim şenliğimizden bir proje.
                   </p>
                 </div>
               </div>
@@ -74,7 +72,7 @@ export default function Projelerimiz() {
               <div className="h-48 md:h-64 overflow-hidden relative">
                 <Image
                   src="/images/project-hidroponik.jpg"
-                  alt="Akıllı Hidroponik Bahçe"
+                  alt="Akıllı Akvaryum Projesi"
                   fill
                   className="object-cover"
                 />
@@ -84,11 +82,12 @@ export default function Projelerimiz() {
                   Sürdürülebilirlik
                 </span>
                 <h4 className="text-xl md:text-2xl font-headline font-bold text-on-surface mb-3">
-                  Akıllı Hidroponik Bahçe
+                  Akıllı Akvaryum Projesi
                 </h4>
                 <p className="text-secondary text-sm leading-relaxed mb-6">
-                  Okul kampüsümüzde su tüketimini %90 azaltan otonom tarım
-                  projesi.
+                  Sıcaklık kontrolü, otomatik yemleme, su seviyesi ölçer ve
+                  kalite sensörleri ile kendi kendini temizleme özelliği bulunan
+                  akıllı akvaryum projesi
                 </p>
                 <span className="text-primary font-semibold flex items-center gap-2 text-sm">
                   Detayları İncele
@@ -99,78 +98,74 @@ export default function Projelerimiz() {
               </div>
             </div>
 
-            {/* Project 3: Medium */}
-            <div className="md:col-span-4 bg-surface-container-lowest rounded-xl overflow-hidden shadow-ambient flex flex-col">
-              <div className="h-48 md:h-64 overflow-hidden relative">
-                <Image
-                  src="/images/project-dijital-miras.jpg"
-                  alt="Dijital Miras Arşivi"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6 md:p-8">
-                <span className="text-xs font-bold text-secondary uppercase tracking-widest block mb-2">
-                  Sosyal Bilimler
-                </span>
-                <h4 className="text-xl md:text-2xl font-headline font-bold text-on-surface mb-3">
-                  Dijital Miras Arşivi
-                </h4>
-                <p className="text-secondary text-sm leading-relaxed mb-6">
-                  Yerel tarihimizi dijital ortama aktararak gelecek nesillere
-                  ulaştıran kolektif çalışma.
-                </p>
-                <span className="text-primary font-semibold flex items-center gap-2 text-sm">
-                  Detayları İncele
-                  <span className="material-symbols-outlined text-sm">
-                    arrow_forward
+            {/* Erasmus+ International Success Section */}
+            <div className="md:col-span-12 bg-surface-container-lowest rounded-xl overflow-hidden shadow-ambient">
+              <div className="grid md:grid-cols-2">
+                <div className="h-[400px] md:h-[600px] overflow-hidden relative">
+                  <Image
+                    src="/images/project-erasmus.jpg"
+                    alt="Geleceğin Teknolojisi Avrupa'da Şekilleniyor"
+                    fill
+                    className="object-cover transition-transform duration-700 hover:scale-105"
+                  />
+                </div>
+                <div className="p-8 md:p-16 flex flex-col justify-center">
+                  <span className="text-xs font-bold text-primary uppercase tracking-widest block mb-4">
+                    Uluslararası Başarı
                   </span>
-                </span>
-              </div>
-            </div>
-
-            {/* Project 4: Wide */}
-            <div className="md:col-span-8 bg-surface-container-lowest rounded-xl overflow-hidden shadow-ambient grid md:grid-cols-2">
-              <div className="h-64 md:h-full overflow-hidden relative">
-                <Image
-                  src="/images/project-cybersafe.jpg"
-                  alt="CyberSafe Junior"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-8 md:p-10 flex flex-col justify-center">
-                <span className="text-xs font-bold text-secondary uppercase tracking-widest block mb-2">
-                  Yazılım &amp; Kodlama
-                </span>
-                <h4 className="text-2xl md:text-3xl font-headline font-bold text-on-surface mb-4">
-                  CyberSafe Junior
-                </h4>
-                <p className="text-secondary text-sm leading-relaxed mb-6">
-                  İlkokul öğrencileri için güvenli internet kullanımı ve siber
-                  zorbalık farkındalığı yaratan oyun tabanlı platform.
-                </p>
-                <div className="flex gap-4 flex-wrap">
-                  {["E-LEARNING", "PYTHON"].map((tag) => (
-                    <span
-                      key={tag}
-                      className="bg-surface-container-high px-3 py-1 rounded text-[10px] font-bold text-on-secondary-container"
-                    >
-                      {tag}
+                  <h2 className="text-3xl md:text-4xl font-headline font-extrabold text-on-surface mb-8 leading-tight">
+                    Geleceğin Teknolojisi Avrupa&apos;da Şekilleniyor:
+                    Öğrencilerimiz Almanya ve Polonya&apos;dan Döndü!
+                  </h2>
+                  <div className="space-y-6 mb-10">
+                    <p className="text-secondary leading-relaxed">
+                      <strong className="text-on-surface">
+                        19 Mayıs Eğitim Kurumları
+                      </strong>{" "}
+                      olarak, öğrencilerimizin mesleki ve kişisel gelişimlerini
+                      sınırların ötesine taşımaya devam ediyoruz. Erasmus+
+                      Programı kapsamında gerçekleştirdiğimiz projelerle, toplam
+                      33 öğrencimiz ve 2 öğretmenimiz Avrupa&apos;nın merkezinde
+                      eğitim ve staj deneyimi kazandı.
+                    </p>
+                    <p className="text-secondary leading-relaxed">
+                      Projemiz kapsamında 30 öğrencimiz, Almanya ve
+                      Polonya&apos;da kendi alanlarında staj yaparak küresel iş
+                      dünyasının kapılarını araladı. Katılımcı öğrencilerimiz bu
+                      süreçte branşlarındaki en güncel teknolojileri yerinde
+                      inceleme fırsatı bulurken, uluslararası standartlarda
+                      mesleki bir deneyim kazandılar.
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-3 mb-10">
+                    {["ERASMUS+", "INTERNATIONAL", "ENGINEERING"].map((tag) => (
+                      <span
+                        key={tag}
+                        className="bg-surface-container-high px-4 py-1.5 rounded text-[11px] font-bold text-on-secondary-container tracking-wider"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <span className="text-primary font-bold flex items-center gap-2 text-base">
+                    Haberin Devamını Oku
+                    <span className="material-symbols-outlined text-xl">
+                      arrow_forward
                     </span>
-                  ))}
+                  </span>
                 </div>
               </div>
             </div>
 
             {/* Project 5: Full Width */}
             <div className="md:col-span-12 bg-surface-container-lowest rounded-xl overflow-hidden shadow-ambient grid md:grid-cols-2">
-              <div className="h-64 md:h-[400px] overflow-hidden relative">
+              <div className="h-[400px] md:h-auto overflow-hidden bg-surface-container-low flex items-center justify-center p-8">
                 <Image
                   src="/images/project-sulama.jpg"
                   alt="Akıllı Sulama Sistemi Projesi"
-                  fill
-                  className="object-cover"
+                  width={600}
+                  height={400}
+                  className="max-w-full max-h-full object-contain"
                 />
               </div>
               <div className="p-8 md:p-10 flex flex-col justify-center">
@@ -199,6 +194,12 @@ export default function Projelerimiz() {
                     </span>
                   ))}
                 </div>
+                <span className="mt-8 text-primary font-semibold flex items-center gap-2 text-sm">
+                  Projeyi İncele
+                  <span className="material-symbols-outlined text-sm">
+                    arrow_forward
+                  </span>
+                </span>
               </div>
             </div>
           </div>
