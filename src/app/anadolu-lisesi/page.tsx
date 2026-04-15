@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { BASE_PATH } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Anadolu Lisesi",
@@ -44,7 +45,7 @@ export default function AnadoluLisesi() {
           <div className="lg:col-span-6 relative h-[400px] lg:h-[600px]">
             <div className="absolute inset-0 bg-surface-container-low rounded-xl -rotate-2 scale-105" />
             <Image
-              src="/images/hero-anadolu.jpg"
+              src={`${BASE_PATH}/images/hero-anadolu.jpg`}
               alt="19 Mayıs Anadolu Lisesi Kampüs ve Sınıf"
               fill
               className="relative z-10 object-cover rounded-xl shadow-2xl"
@@ -159,7 +160,7 @@ export default function AnadoluLisesi() {
             </div>
             <div className="w-full md:w-1/2 h-48 bg-surface-container-high rounded-lg overflow-hidden relative">
               <Image
-                src="/images/anadolu-kampus.jpg"
+                src={`${BASE_PATH}/images/anadolu-kampus.jpg`}
                 alt="Kampüs Alanı"
                 fill
                 className="object-cover"
@@ -177,7 +178,7 @@ export default function AnadoluLisesi() {
               <div className="absolute -inset-4 bg-primary/5 rounded-[2rem] -rotate-3 transition-transform group-hover:rotate-0 duration-500" />
               <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/5] border border-surface-container-high">
                 <Image
-                  src="/images/anadolu-kocluk.jpg"
+                  src={`${BASE_PATH}/images/anadolu-kocluk.jpg`}
                   alt="Birebir Öğrenci Koçluğu ve Rehberlik"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"

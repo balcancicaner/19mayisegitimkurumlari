@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+import { BASE_PATH } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Teknoloji Koleji",
@@ -14,7 +15,7 @@ export default function TeknolojiKoleji() {
       <section className="relative min-h-[85vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero-teknoloji.jpg"
+            src={`${BASE_PATH}/images/hero-teknoloji.jpg`}
             alt="19 Mayıs Teknoloji Koleji modern kampüs"
             fill
             className="object-cover"

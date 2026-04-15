@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { BASE_PATH } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "İletişim & Kayıt",
@@ -130,7 +131,7 @@ export default function Iletisim() {
 
           <div className="bg-surface-container-high rounded-xl overflow-hidden min-h-[280px] border border-outline-variant/15 relative group flex-1">
             <Image
-              src="/images/map-samsun.jpg"
+              src={`${BASE_PATH}/images/map-samsun.jpg`}
               alt="Harita - Samsun, Çarşamba"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-110"

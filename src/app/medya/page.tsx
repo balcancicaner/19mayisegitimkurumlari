@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+import { BASE_PATH } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Medya",
@@ -28,7 +29,7 @@ export default function Medya() {
         <div className="w-full md:w-7/12 relative">
           <div className="aspect-video rounded-xl overflow-hidden bg-surface-container-highest shadow-2xl relative z-10">
             <Image
-              src="/images/medya-hero.jpg"
+              src={`${BASE_PATH}/images/medya-hero.jpg`}
               alt="Okul Etkinliği"
               fill
               className="object-cover"
@@ -56,7 +57,7 @@ export default function Medya() {
           <div className="md:col-span-2 bg-surface-container-lowest p-6 md:p-8 rounded-xl flex flex-col md:flex-row gap-6 md:gap-8 items-center shadow-sm">
             <div className="w-full md:w-1/2 aspect-square rounded-lg overflow-hidden relative">
               <Image
-                src="/images/medya-robotik.jpg"
+                src={`${BASE_PATH}/images/medya-robotik.jpg`}
                 alt="Robotik Yarışması"
                 fill
                 className="object-cover"
@@ -90,7 +91,7 @@ export default function Medya() {
           <div className="bg-surface-container-low p-6 rounded-xl shadow-sm">
             <div className="aspect-video rounded-lg overflow-hidden mb-4 relative">
               <Image
-                src="/images/medya-bahar.jpg"
+                src={`${BASE_PATH}/images/medya-bahar.jpg`}
                 alt="Kültür Sanat"
                 fill
                 className="object-cover"
@@ -107,7 +108,7 @@ export default function Medya() {
           <div className="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
             <div className="aspect-video rounded-lg overflow-hidden mb-4 relative">
               <Image
-                src="/images/medya-mezuniyet.jpg"
+                src={`${BASE_PATH}/images/medya-mezuniyet.jpg`}
                 alt="Akademik Başarı"
                 fill
                 className="object-cover"
@@ -143,7 +144,7 @@ export default function Medya() {
           <div className="bg-surface-container-low p-6 rounded-xl shadow-sm">
             <div className="aspect-video rounded-lg overflow-hidden mb-4 relative">
               <Image
-                src="/images/medya-agac.jpg"
+                src={`${BASE_PATH}/images/medya-agac.jpg`}
                 alt="Sosyal Sorumluluk"
                 fill
                 className="object-cover"
@@ -172,7 +173,7 @@ export default function Medya() {
         <div className="grid grid-cols-12 gap-4">
           <div className="col-span-12 md:col-span-8 aspect-[16/10] bg-surface-container rounded-xl overflow-hidden relative group">
             <Image
-              src="/images/gallery-kutuphane.jpg"
+              src={`${BASE_PATH}/images/gallery-kutuphane.jpg`}
               alt="Modern Kütüphane"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -185,7 +186,7 @@ export default function Medya() {
           </div>
           <div className="col-span-12 md:col-span-4 aspect-square bg-surface-container rounded-xl overflow-hidden relative group">
             <Image
-              src="/images/gallery-spor.jpg"
+              src={`${BASE_PATH}/images/gallery-spor.jpg`}
               alt="Spor Salonu"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -198,7 +199,7 @@ export default function Medya() {
           </div>
           <div className="col-span-12 md:col-span-4 aspect-[4/5] bg-surface-container rounded-xl overflow-hidden relative group">
             <Image
-              src="/images/gallery-sanat.jpg"
+              src={`${BASE_PATH}/images/gallery-sanat.jpg`}
               alt="Sanat Atölyesi"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -211,7 +212,7 @@ export default function Medya() {
           </div>
           <div className="col-span-12 md:col-span-8 aspect-video bg-surface-container rounded-xl overflow-hidden relative group">
             <Image
-              src="/images/gallery-lab.jpg"
+              src={`${BASE_PATH}/images/gallery-lab.jpg`}
               alt="Laboratuvar"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-110"

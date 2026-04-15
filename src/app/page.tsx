@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { BASE_PATH } from "@/lib/constants";
 
 export default function Anasayfa() {
   return (
@@ -8,7 +9,7 @@ export default function Anasayfa() {
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero-anasayfa.jpg"
+            src={`${BASE_PATH}/images/hero-anasayfa.jpg`}
             alt="19 Mayıs Teknoloji Koleji kampüs binası"
             fill
             className="object-cover"
@@ -91,19 +92,19 @@ export default function Anasayfa() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                img: "/images/project-robotik-kol.jpg",
+                img: `${BASE_PATH}/images/project-robotik-kol.jpg`,
                 title: "Yapay Zeka Destekli Robotik Kol",
                 team: "Teknoloji Koleji - Robotik Takımı",
                 desc: "Yapay zeka destekli kol, nesne tanıma ve hassas hareket kabiliyetiyle endüstriyel standartlarda geliştirildi.",
               },
               {
-                img: "/images/project-akvaryum.jpg",
+                img: `${BASE_PATH}/images/project-akvaryum.jpg`,
                 title: "Akıllı Akvaryum Projesi",
                 team: "Teknoloji Koleji - Robotik Takımı",
                 desc: "Sürdürülebilir tarım için geliştirilen topraksız dikey bahçe sistemi, IoT sensörlerle su tasarrufu sağlıyor.",
               },
               {
-                img: "/images/project-bluetooth.jpg",
+                img: `${BASE_PATH}/images/project-bluetooth.jpg`,
                 title: "Bluetooth Kontrollü Araç Projesi",
                 team: "Teknoloji Koleji - Robotik Takımı",
                 desc: "Bluetooth iletişim modülleri kullanılarak tasarlanan mobil kontrollü otonom araç prototipi.",
@@ -144,7 +145,7 @@ export default function Anasayfa() {
           <div className="grid md:grid-cols-2 gap-12">
             {[
               {
-                img: "/images/school-teknoloji.jpg",
+                img: `${BASE_PATH}/images/school-teknoloji.jpg`,
                 title: "Teknoloji Koleji",
                 badge: "STEM Odaklı",
                 desc: "Yazılım, robotik kodlama ve yapay zeka odaklı müfredatımızla, dijital çağın liderlerini yetiştiriyoruz. Modern atölyeler ve endüstri iş birlikleriyle uygulamalı eğitim.",
@@ -155,7 +156,7 @@ export default function Anasayfa() {
                 href: "/teknoloji-koleji",
               },
               {
-                img: "/images/school-anadolu.jpg",
+                img: `${BASE_PATH}/images/school-anadolu.jpg`,
                 title: "Anadolu Lisesi",
                 badge: "Akademik Başarı",
                 desc: "Köklü akademik disiplin ve sınav başarısı odaklı yaklaşımımızla öğrencilerimizi hayallerindeki üniversitelere hazırlıyoruz. Sosyal bilimler ve sanatla harmanlanmış müfredat.",

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { BASE_PATH } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Kurumsal",
@@ -12,25 +13,25 @@ const LEADERS = [
   {
     name: "Muzaffer Batlıcancı",
     role: "Kurucu Müdür",
-    img: "/images/team-muzaffer.jpg",
+    img: `${BASE_PATH}/images/team-muzaffer.jpg`,
     desc: "Mühendis olarak edindiği 12 yıllık tecrübesiyle kurumumuzun stratejik vizyonuna liderlik etmektedir.",
   },
   {
     name: "Süleyman Yıldırım",
     role: "Eğitim Koordinatörü",
-    img: "/images/team-suleyman.jpg",
+    img: `${BASE_PATH}/images/team-suleyman.jpg`,
     desc: "Eğitim programlarının geliştirilmesi ve akademik süreçlerin koordinasyonundan sorumludur.",
   },
   {
     name: "Caner Akın",
     role: "Teknoloji Direktörü",
-    img: "/images/team-caner.jpg",
+    img: `${BASE_PATH}/images/team-caner.jpg`,
     desc: "Kampüslerimizin dijital dönüşümü ve teknolojik altyapısından sorumludur.",
   },
   {
     name: "Bedirhan Ateş",
     role: "Müdür Yardımcısı",
-    img: "/images/team-bedirhan.jpg",
+    img: `${BASE_PATH}/images/team-bedirhan.jpg`,
     desc: "Eğitim kurumumuzun büyüme ve gelişim hedeflerine katkıda bulunmaktadır.",
   },
 ];
@@ -66,7 +67,7 @@ export default function Kurumsal() {
             <div className="relative">
               <div className="aspect-[4/5] bg-surface-container-highest rounded-xl overflow-hidden shadow-ambient rotate-2 hover:rotate-0 transition-transform duration-500">
                 <Image
-                  src="/images/building-kampus.jpg"
+                  src={`${BASE_PATH}/images/building-kampus.jpg`}
                   alt="19 Mayıs Teknoloji Koleji - Modern Kampüs Binası"
                   fill
                   className="object-cover"

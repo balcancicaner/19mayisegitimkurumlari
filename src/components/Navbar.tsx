@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { BASE_PATH } from "@/lib/constants";
 import { useState, useEffect } from "react";
 
 const NAV_ITEMS = [
@@ -41,7 +42,7 @@ export function Navbar() {
       <nav className="flex justify-between items-center px-6 md:px-12 py-4 w-full max-w-screen-2xl mx-auto">
         <Link href="/" className="flex items-center gap-3 shrink-0">
           <Image
-            src="/images/logo.png"
+            src={`${BASE_PATH}/images/logo.png`}
             alt="19 Mayıs Eğitim Kurumları"
             width={48}
             height={48}

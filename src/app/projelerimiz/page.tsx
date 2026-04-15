@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+import { BASE_PATH } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Projelerimiz",
@@ -47,7 +48,7 @@ export default function Projelerimiz() {
             <div className="md:col-span-8 bg-surface-container-lowest rounded-xl overflow-hidden shadow-ambient group cursor-pointer">
               <div className="relative h-[350px] md:h-[500px]">
                 <Image
-                  src="/images/project-robotik-lab.jpg"
+                  src={`${BASE_PATH}/images/project-robotik-lab.jpg`}
                   alt="AI Destekli Robotik Kol"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -71,7 +72,7 @@ export default function Projelerimiz() {
             <div className="md:col-span-4 bg-surface-container-lowest rounded-xl overflow-hidden shadow-ambient flex flex-col">
               <div className="h-48 md:h-64 overflow-hidden relative">
                 <Image
-                  src="/images/project-hidroponik.jpg"
+                  src={`${BASE_PATH}/images/project-hidroponik.jpg`}
                   alt="Akıllı Akvaryum Projesi"
                   fill
                   className="object-cover"
@@ -103,7 +104,7 @@ export default function Projelerimiz() {
               <div className="grid md:grid-cols-2">
                 <div className="h-[400px] md:h-[600px] overflow-hidden relative">
                   <Image
-                    src="/images/project-erasmus.jpg"
+                    src={`${BASE_PATH}/images/project-erasmus.jpg`}
                     alt="Geleceğin Teknolojisi Avrupa'da Şekilleniyor"
                     fill
                     className="object-cover transition-transform duration-700 hover:scale-105"
@@ -161,7 +162,7 @@ export default function Projelerimiz() {
             <div className="md:col-span-12 bg-surface-container-lowest rounded-xl overflow-hidden shadow-ambient grid md:grid-cols-2">
               <div className="h-[400px] md:h-auto overflow-hidden bg-surface-container-low flex items-center justify-center p-8">
                 <Image
-                  src="/images/project-sulama.jpg"
+                  src={`${BASE_PATH}/images/project-sulama.jpg`}
                   alt="Akıllı Sulama Sistemi Projesi"
                   width={600}
                   height={400}
